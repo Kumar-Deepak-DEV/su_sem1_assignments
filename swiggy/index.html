@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dbzg0wt5y/image/upload/v1758791241/sw_zu0cvn.png" type="image/x-icon">
+    <style>
+       
+        .loc, .item{
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top:30px ;
+            margin-bottom: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sear{
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            margin-left: 200px;
+            margin-right: 200px;
+            display: flex;
+            justify-content: space-between;
+            color: gray;
+            padding:10px 20px 10px ;
+        }
+        .bl{
+            margin: 0;
+            color: blue;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .loc > div{
+            display: flex;
+            gap: 10px;
+        }
+        #svg{
+            background-color: blue;
+        }
+        .bl + p{
+            font-size: 13px;
+            color: gray;
+        }
+        #img{
+            background-color: gray;
+            border-radius: 18px;
+        }
+        
+        .div{
+            margin-top: 25px;
+            margin-left: 200px;
+            margin-right: 200px;
+            background-image: url(./dd.png);
+            height: 350px;
+            background-color: blue;
+        }
+        .dd{
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            padding-top:30px ;
+            gap: 20px;
+        }
+        .dd > p{
+                margin-bottom: 30px;
+        
+        }
+        img{
+            width: 8%;
+            margin-left: 5px;
+        }
+        #gig{
+            width: 80%;
+            margin-bottom: 30px;
+        }
+        .prod{
+            margin-left: 200px;
+            display: flex;
+
+        }
+        .item{
+            width: 100px;
+            margin: 20px;
+            height: 250px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .class{
+            border: 2px solid gray ;
+            border-radius: 10px;
+            width:96%;
+            height:60%;
+            margin: 0;
+            padding: 0;
+        }
+        .time{
+            color: gray;
+            font-size: 10px;
+        }
+        .produ{
+            font-weight: bold;
+        }
+        .unit{
+            color: gray;
+            font-size: 15px;
+        }
+        .price{
+            color: gray;
+            font-weight: bold
+        }
+        #para{
+            margin-left:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loc">
+        <div >
+            <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="white" d="M11 22.95v-2q-3.125-.35-5.363-2.587T3.05 13h-2v-2h2q.35-3.125 2.588-5.363T11 3.05v-2h2v2q3.125.35 5.363 2.588T20.95 11h2v2h-2q-.35 3.125-2.587 5.363T13 20.95v2zM12 19q2.9 0 4.95-2.05T19 12t-2.05-4.95T12 5T7.05 7.05T5 12t2.05 4.95T12 19m0-3q-1.65 0-2.825-1.175T8 12t1.175-2.825T12 8t2.825 1.175T16 12t-1.175 2.825T12 16m0-2q.825 0 1.413-.587T14 12t-.587-1.412T12 10t-1.412.588T10 12t.588 1.413T12 14m0-2"/></svg>
+            
+            <div>
+                <p class="bl">Add your location
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="blue" d="m12 15l5-5H7z"/></svg>
+                </p>
+            <p>To see items in your area</p>
+            </div> 
+        </div>
+        <div>
+            <svg id="img" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><g fill="white" fill-rule="evenodd" clip-rule="evenodd"><path d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0m-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M3 12c0 2.09.713 4.014 1.908 5.542A8.99 8.99 0 0 1 12.065 14a8.98 8.98 0 0 1 7.092 3.458A9 9 0 1 0 3 12m9 9a8.96 8.96 0 0 1-5.672-2.012A6.99 6.99 0 0 1 12.065 16a6.99 6.99 0 0 1 5.689 2.92A8.96 8.96 0 0 1 12 21"/></g></svg>
+        </div>
+    </div>
+    <div class="sear">
+        <p>Search for "Dry Fruits"</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="gray" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"/></svg>
+    </div>
+    <div class="div">
+        <div class="dd">
+           <p> Payment Partners</p>
+           <img src="https://res.cloudinary.com/dbzg0wt5y/image/upload/v1758793922/alpha_bkprqh.png" width="80%" alt="" id="gig" >
+
+        </div>
+        <div class="image">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/a03e3e9c-e8e3-49a1-8c1a-cc8070b54646_Freshcorner.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/46993b49-52ab-4b68-aa11-3726b0acf486_Indulgencecorner.png" alt="" srcset="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/21/d4b9e261-1b04-44bb-8dac-d14a6a47884e_Mobileselectronics.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/25/190927a6-75f9-4bb8-b249-a02eac92fe25_Cetaphil1.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/20/79ff0a53-74d4-4b7a-83e1-fb2c0ebb20d6_Groceryessentials.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/21/2a7dc59d-a232-422f-9b53-943ca2d72a21_d65afeae475e4bb5bd4f1f8da9d60503Homekitchen.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/20/e1831153-c99d-47ab-8cc0-6a6a671b18cb_c3new20.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/74c92fa5-9f72-4a52-8740-e1341756a0dd_Babycare.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/4e233377-edad-4a83-8981-0c85e36bfa13_Cleaningessentials.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/dd2a3c81-bee0-47f1-8c01-75c84fde8258_Toyscollection.png" alt="">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/4db19be1-1879-405a-a371-ff5f0a80bf57_Healthwellness.png" alt="">
+
+        </div>
+    </div>
+    <div class="prod">
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/7/25/1abd8cd0-d5b0-434f-9f85-5b59b1f9fbe9_53UAG2RD0A.png" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ">Hammer Airflow plus In-Ear-Truly...</p>
+            <p class="unit">1 unit </p>
+            <p class="price">&#8377;399 <del>&#8377;4999</del></p>
+        </div>
+        <div class="item"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/8/11/f5806b27-a185-462e-a4cf-42ba259c61df_298687.png" alt="" class="class"> 
+            <p class="time">4 MINS</p>
+            <p class="produ">OPPO K13x | 6GB RAM...</p>
+            <p class="unit">1 unit</p>
+            <p class="price">&#8377;11999<del>&#8377;16999</del></p>
+        </div>
+        <div class="item"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2024/4/9/8382664d-1df3-4efb-ab16-5d1fa6931cac_Appliancesinstamax_9BTKX60NUP_MN.jpg" alt="" class="class"> 
+            <p class="time">4 MINS</p>
+            <p class="produ">Lifelong Weighing Scale...</p>
+            <p class="unit">1 unit</p>
+            <p class="price">&#8377;299<del>&#8377;1899</del></p>
+        </div>
+        <div class="item"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/6/12/442267da-bd06-4b30-bfc6-628434033fdc_279239_1.png" alt="" class="class"> 
+            <p class="time">18 MINS</p>
+            <p class="produ">Dubstep Buzz X9 With 56 hrs...</p>
+            <p class="unit">1 pack</p>
+            <p class="price">&#8377;300<del>&#8377;5999</del></p>
+        </div>
+        <div class="item"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/6/10/ed244a1c-2177-4c16-a1c0-3ec5764d2c13_343913_1.png" alt="" class="class"> 
+            <p class="time">4 MINS</p>
+            <p class="produ">EVM EnStick 64 GB USB...</p>
+            <p class="unit">1 pack</p>
+            <p class="price">&#8377;389<del>&#8377;1999</del></p>
+        </div>
+        <div class="item"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2024/12/4/fbfa5b9e-ca1d-40a8-a7da-fccc01d3508b_883960_1.png" alt="" class="class"> 
+            <p class="time">4 MINS</p>
+            <p class="produ">Portronics Bridge Y USB to Type C...</p>
+            <p class="unit">1 piece</p>
+            <p class="price">&#8377;69<del>&#8377;599</del></p>
+        </div>
+        <div class="item"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/9/9/bfaa07e4-92bd-43f5-a056-664043eb7166_259758_1.png" alt="" class="class"> 
+            <p class="time">4 MINS</p>
+            <p class="produ">Dubstep Blaze Ultra 65 W Type-C...</p>
+            <p class="unit">1 piece</p>
+            <p class="price">&#8377;69<del>&#8377;1299</del></p>
+        </div>
+        
+    </div>
+    <p id="para"><b>Hot Deals</b></p>
+    <div class="prod">
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/765ff374dd4023fde2d3936ec482814d" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ">Onion (Eerulli)</p>
+            <p class="unit">1 kg </p>
+            <p class="price">&#8377;29 <del>&#8377;36</del></p>
+        </div>
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/5abfb3f08ea92d31125ca290bb0edc1b" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ">Coriander Leaves</p>
+            <p class="unit">1 Bunch x 2 </p>
+            <p class="price">&#8377;22 <del>&#8377;36</del></p>
+        </div>
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/9/20/9dcdda70-4fd6-4399-b28a-5ec84c55188c_2435_1.png" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ">Sunpure Refined Sunflower oil</p>
+            <p class="unit">1 ltr </p>
+            <p class="price">&#8377;150 <del>&#8377;190</del></p>
+        </div>
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/e14f5d679f7ac81a64b7ae831afcfe9a" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ">Robusta Banana</p>
+            <p class="unit">4 pcs </p>
+            <p class="price">&#8377;39 <del>&#8377;99</del></p>
+        </div>
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/054e83b5ebe789cf4b7b146319df4cfc" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ"> Indian Tomato</p>
+            <p class="unit">500 gm </p>
+            <p class="price">&#8377;22 <del>&#8377;39</del></p>
+        </div>
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/5a167894463a877a59b4cd0d3722ef34" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ">Green Chilli</p>
+            <p class="unit">100 g </p>
+            <p class="price">&#8377;20 <del>&#8377;29</del></p>
+        </div>
+        <div class="item">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2024/5/29/9b4d187f-d583-4502-a9c2-2fce1aad088d_freshvegetables_AHH0F7IKBG_MN.png" alt="" class="class">
+            <p class="time">4 MINS</p>
+            <p class="produ">Fresh Eggs</p>
+            <p class="unit">1 dozen </p>
+            <p class="price">&#8377;89 <del>&#8377;149</del></p>
+        </div>
+    </div>
+</body>
+</html>
